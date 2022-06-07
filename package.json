@@ -1,6 +1,6 @@
 {
   "name": "@nouhsa/akramcss",
-  "version": "1.0.0",
+  "version": "1.0.51",
   "description": "akramcss is a css utility library that provides a number of useful classes and utilities for styling your web pages.",
   "main": "styles.scss",
   "unpkg": "css/akramcss.css",
