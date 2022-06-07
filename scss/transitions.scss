@@ -1,0 +1,26 @@
+//@use "./Variables/transitionVariables" as *;
+@use './Variables' as * ;
+
+@each $key, $value in $transitionsProperties {
+  .transition-#{$key} {
+    transition-property: $value;
+  }
+}
+
+@each $key, $value in $transitionDuration {
+  .duration-#{$key} {
+    transition-duration: $value;
+  }
+}
+
+@each $key, $value in $transitionTimingFunctions {
+  .#{$key} {
+    transition-timing-function: $value;
+  }
+}
+
+@each $key, $value in $transitionDelays {
+  .delay-#{$key} {
+    transition-delay: $value;
+  }
+}

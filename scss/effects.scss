@@ -1,0 +1,41 @@
+//@use "./variables/colorVariables" as *;
+//@use "./variables/effectVariables" as *;
+//@use "./mixins/helperMixin" as *;
+
+@use "./Variables" as * ;
+//==================================
+// generating shadow utility classes
+//==================================
+@each $size, $value in $shadows {
+  @each $key, $colorvalue in $colorPalette {
+    .shadow-#{$size}-#{$key} {
+      $customShadowColor: $colorvalue;
+      box-shadow: $value #{$customShadowColor};
+    }
+  }
+}
+//==================================
+// generating opacity utility classes
+//==================================
+
+@include classUtilityGeneratorForOneProperty($opacities, opacity, opacity);
+
+//==================================
+// generating mix blend mode utility classes
+//==================================
+
+@include classUtilityGeneratorForOneProperty(
+  $mixBlendMode,
+  mix-blend-mode,
+  mix-blend-mode
+);
+
+//==================================
+// generating mix blend mode utility classes
+//==================================
+
+@include classUtilityGeneratorForOneProperty(
+  $mixBlendMode,
+  bg-blend-mode,
+  background-blend-mode
+);

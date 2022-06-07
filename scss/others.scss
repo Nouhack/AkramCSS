@@ -1,0 +1,171 @@
+//@use "./mixins/helperMixin" as *;
+//@use "./Variables/colorVariables" as *;
+//@use "./Variables/sizeVariables" as *;
+//@use "./Variables/otherVariables" as *;
+
+@use "./Variables" as * ;
+
+//========================
+// cursor utility classes
+//========================
+
+@include classUtilityGeneratorForOneProperty($cssCursorsList, cursor, cursor);
+
+.cursor-custom {
+  cursor: url($customImageCursor), auto;
+}
+//========================
+// resize utility classes
+//========================
+
+@include classUtilityGeneratorForOneProperty($resizes, resize, resize);
+
+//========================
+// user select utility classes
+//========================
+
+@include classUtilityGeneratorForOneProperty($userSelects, select, user-select);
+
+//========================
+// Scroll Snap Type utility classes
+//========================
+
+@include classUtilityGeneratorForOnePropertyWithSpecialPrefix(
+  (none),
+  snap,
+  scroll-snap-type,
+  ""
+);
+
+@each $value in $ScrollSnapType {
+  @include classUtilityGeneratorForOnePropertyWithSpecialPrefix(
+    $ScrollSnapType,
+    snap-x,
+    scroll-snap-type,
+    "x"
+  );
+
+  @include classUtilityGeneratorForOnePropertyWithSpecialPrefix(
+    $ScrollSnapType,
+    snap-y,
+    scroll-snap-type,
+    "y"
+  );
+  @include classUtilityGeneratorForOnePropertyWithSpecialPrefix(
+    $ScrollSnapType,
+    snap-both,
+    scroll-snap-type,
+    "both"
+  );
+}
+
+//========================
+// Scroll Snap Align utility classes
+//========================
+
+@include classUtilityGeneratorForOneProperty(
+  $scrollSnapAlign,
+  snap-align,
+  scroll-snap-align
+);
+
+//========================
+// Scroll behavior utility classes
+//========================
+@include classUtilityGeneratorForOneProperty(
+  $scrollBehaviors,
+  scroll,
+  scroll-behavior
+);
+
+//========================
+// carpet color utility classes
+//========================
+@include classUtilityGeneratorForOneProperty($colorPalette, caret, caret-color);
+
+//========================
+// accent color utility classes
+//========================
+@include classUtilityGeneratorForOneProperty(
+  $colorPalette,
+  accent,
+  accent-color
+);
+
+//========================
+// scroll margin utility classes
+//========================
+
+@include classUtilityGeneratorForOneProperty(
+  $remSizes,
+  scroll-m,
+  scroll-margin
+);
+@include classUtilityGeneratorForOneProperty(
+  $remSizes,
+  scroll-mt,
+  scroll-margin-top
+);
+@include classUtilityGeneratorForOneProperty(
+  $remSizes,
+  scroll-mr,
+  scroll-margin-right
+);
+@include classUtilityGeneratorForOneProperty(
+  $remSizes,
+  scroll-mb,
+  scroll-margin-bottom
+);
+@include classUtilityGeneratorForOneProperty(
+  $remSizes,
+  scroll-ml,
+  scroll-margin-left
+);
+
+//========================
+// scroll padding utility classes
+//========================
+
+@include classUtilityGeneratorForOneProperty(
+  $remSizes,
+  scroll-p,
+  scroll-padding
+);
+@include classUtilityGeneratorForOneProperty(
+  $remSizes,
+  scroll-pt,
+  scroll-padding-top
+);
+@include classUtilityGeneratorForOneProperty(
+  $remSizes,
+  scroll-pr,
+  scroll-padding-right
+);
+@include classUtilityGeneratorForOneProperty(
+  $remSizes,
+  scroll-pb,
+  scroll-padding-bottom
+);
+@include classUtilityGeneratorForOneProperty(
+  $remSizes,
+  scroll-pl,
+  scroll-padding-left
+);
+//===============================
+// generating stroke utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($colorPalette, stroke, stroke);
+
+//===============================
+// generating stroke width utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty(
+  $strokeWidths,
+  stroke-w,
+  stroke-width
+);
+
+//===============================
+// generating fill utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($colorPalette, fill, fill);

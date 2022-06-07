@@ -1,0 +1,51 @@
+
+$shadow-sm    :   0 3px 15px 0 !default;
+$shadow-md    :   0 6px 20px 0 !default;
+$shadow-lg    :   0 10px 30px 0 !default;  
+$shadow-xl    :   0 20px 40px 0 !default;
+$shadow-2xl   :   0 30px 50px 0 !default;
+$shadow-3xl   :   0 40px 80px 0 !default;
+
+
+$customShadowColor: none;
+
+$shadows: (
+  "sm"    : $shadow-sm,
+  "md"    : $shadow-md,
+  "lg"    : $shadow-lg,
+  "xl"    : $shadow-xl,
+  "2xl"   : $shadow-2xl,
+  "3xl"   : $shadow-3xl,
+) !default;
+
+$opacities: (
+  "0"   : 0,
+  "10"  : 0.1,
+  "20"  : 0.2,
+  "30"  : 0.3,
+  "40"  : 0.4,
+  "50"  : 0.5,
+  "60"  : 0.6,
+  "70"  : 0.7,
+  "80"  : 0.8,
+  "90"  : 0.9,
+  "100" : 1,
+);
+$mixBlendMode: (
+  "normal"        : normal,
+  "multiply"      : multiply,
+  "screen"        : screen,
+  "overlay"       : overlay,
+  "darken"        : darken,
+  "lighten"       : lighten,
+  "color-dodge"   : color-dodge,
+  "color-burn"    : color-burn,
+  "hard-light"    : hard-light,
+  "soft-light"    : soft-light,
+  "difference"    : difference,
+  "exclusion"     : exclusion,
+  "hue"           : hue,
+  "saturation"    : saturation,
+  "color"         : color,
+  "luminosity"    : luminosity,
+);

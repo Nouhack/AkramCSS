@@ -1,0 +1,82 @@
+@mixin utilsForOneProperty($variable, $className, $param1, $breakPoint) {
+  $prex: "";
+  @if $breakPoint == "" {
+    $prex: ".";
+  } @else {
+    $prex: "." +#{$breakPoint}\:;
+  }
+  @each $key, $value in $variable {
+    #{$prex}#{$className}-#{$key},
+    #{$prex}hover\:#{$className}-#{$key}:hover {
+      #{$param1}: $value;
+    }
+  }
+}
+
+@mixin utilsForTwoProperty(
+  $variable,
+  $className,
+  $param1,
+  $param2,
+  $breakPoint
+) {
+  $prex: "";
+  @if $breakPoint == "" {
+    $prex: ".";
+  } @else {
+    $prex: "." +#{$breakPoint}\:;
+  }
+  @each $key, $value in $variable {
+    #{$prex}#{$className}-#{$key},
+    #{$prex}hover\:#{$className}-#{$key}:hover {
+      #{$param1}: $value;
+      #{$param2}: $value;
+    }
+  }
+}
+
+@mixin utilsForOnePropertyPrefix(
+  $variable,
+  $className,
+  $param1,
+  $prefix,
+  $breakPoint
+) {
+  $prex: "";
+  @if $breakPoint == "" {
+    $prex: ".";
+  } @else {
+    $prex: "." +#{$breakPoint}\:;
+  }
+
+  @each $key, $value in $variable {
+    $valueWithPrefix: #{$prefix}+ "(" + #{$value}+ ")";
+    #{$prex}#{$className}-#{$key},
+    #{$prex}hover\:#{$className}-#{$key}:hover {
+      #{$param1}: $valueWithPrefix;
+    }
+  }
+}
+
+// utils for one property with special prefix
+
+@mixin utilsForOnePropertyWithSpecialPrefixAndArray(
+  $variable,
+  $className,
+  $param1,
+  $specPref,
+  $breakPoint
+) {
+  $prex: "";
+  @if $breakPoint == "" {
+    $prex: ".";
+  } @else {
+    $prex: "." +#{$breakPoint}\:;
+  }
+  @each $value in $variable {
+    #{$prex}#{$className}-#{$value},
+    #{$prex}hover\:#{$className}-#{$value}:hover {
+      #{$param1}: #{$specPref} #{$value};
+    }
+  }
+}

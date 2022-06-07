@@ -1,0 +1,120 @@
+//@use "./mixins/helperMixin" as *;
+//@use "./Variables/colorVariables" as *;
+//@use "./Variables/sizeVariables" as *;
+//@use "./Variables/otherVariables" as *;
+
+@use "./Variables" as *;
+//===============================
+// generating aspect ratio utility classes
+//===============================
+
+@include classUtilityGeneratorForOneProperty(
+  $aspectRatios,
+  aspect,
+  aspect-ratio
+);
+//===============================
+// generating box decoration break utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty(
+  $boxDecorationBreaks,
+  boxD,
+  box-decoration-break
+);
+//===============================
+// generating display utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($displays, display, display);
+//===============================
+// generating float utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($floats, float, float);
+//===============================
+// generating clear utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($clears, clear, clear);
+//===============================
+// generating object fit utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($objectFits, objectF, object-fit);
+
+//===============================
+// generating object position utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty(
+  $objectPositions,
+  objectP,
+  object-position
+);
+
+//===============================
+// generating overflow utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($overflows, overflow, overflow);
+
+//===============================
+// generating overflow-x utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($overflows, overflowX, overflow-x);
+
+//===============================
+// generating overflow-y utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($overflows, overflowY, overflow-y);
+
+//===============================
+// generating overscroll behavior utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty(
+  $OverscrollBehaviors,
+  overscroll,
+  overscroll-behavior
+);
+
+//===============================
+// generating overscroll-behavior-x utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty(
+  $OverscrollBehaviors,
+  overscrollX,
+  overscroll-behavior-x
+);
+
+//===============================
+// generating overscroll-behavior-y utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty(
+  $OverscrollBehaviors,
+  overscrollY,
+  overscroll-behavior-y
+);
+
+//===============================
+// generating position utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($positions, position, position);
+
+//===============================
+// generating top and right and left and bottom utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($remSizes, top, top);
+@include classUtilityGeneratorForOneProperty($remSizes, right, right);
+@include classUtilityGeneratorForOneProperty($remSizes, left, left);
+@include classUtilityGeneratorForOneProperty($remSizes, bottom, bottom);
+
+//===============================
+// generating visibility utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty(
+  (
+    visible: visible,
+    hidden: hidden,
+  ),
+  v,
+  visibility
+);
+
+//===============================
+// generating z-index utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($zIndexes, z, z-index);

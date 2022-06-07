@@ -1,0 +1,147 @@
+//@use "./mixins/helperMixin" as *;
+//@use "./variables/colorVariables" as *;
+//@use "./variables/backgroundVariables" as *;
+@use "./Variables" as *;
+
+:root {
+  --fisrtColor: transparent;
+  --secondColor: transparent;
+}
+//=============================
+// generating background attachment utility classes
+//=============================
+
+@include classUtilityGeneratorForOneProperty(
+  $backgroundAttachment,
+  bg,
+  background-attachment
+);
+
+//=============================
+// generating background clip utility classes
+//=============================
+
+@include classUtilityGeneratorForOneProperty(
+  $backgroundClip,
+  bg,
+  background-clip
+);
+//=============================
+// generating background color utility classes
+//=============================
+
+@include classUtilityGeneratorForOneProperty(
+  $colorPalette,
+  bg,
+  background-color
+);
+//=============================
+// generating background origin utility classes
+//=============================
+
+@include classUtilityGeneratorForOneProperty(
+  $backgroundOrigin,
+  bg,
+  background-origin
+);
+
+//=============================
+// generating background position utility classes
+//=============================
+
+@include classUtilityGeneratorForOneProperty(
+  $backgroundPosition,
+  bg,
+  background-position
+);
+//=============================
+// generating background repeat utility classes
+//=============================
+
+@include classUtilityGeneratorForOneProperty(
+  $backgroundRepeat,
+  bg,
+  background-repeat
+);
+
+//=============================
+// generating background size utility classes
+//=============================
+
+@include classUtilityGeneratorForOneProperty(
+  $backgroundSize,
+  bg,
+  background-size
+);
+
+@mixin gradientGenerator {
+  @each $key, $value in $colorPalette {
+    .from-#{$key} {
+      --firstColor: #{$value};
+    }
+    .to-#{$key} {
+      --secondColor: #{$value};
+    }
+  }
+}
+.gradient-none {
+  background-image: none;
+}
+.gradient-to-top {
+  background-image: linear-gradient(
+    to top,
+    var(--firstColor),
+    var(--secondColor)
+  );
+}
+.gradient-to-right {
+  background-image: linear-gradient(
+    to right,
+    var(--firstColor),
+    var(--secondColor)
+  );
+}
+.gradient-to-bottom {
+  background-image: linear-gradient(
+    to bottom,
+    var(--firstColor),
+    var(--secondColor)
+  );
+}
+.gradient-to-left {
+  background-image: linear-gradient(
+    to left,
+    var(--firstColor),
+    var(--secondColor)
+  );
+}
+.gradient-to-top-right {
+  background-image: linear-gradient(
+    to top right,
+    var(--firstColor),
+    var(--secondColor)
+  );
+}
+.gradient-to-top-left {
+  background-image: linear-gradient(
+    to top left,
+    var(--firstColor),
+    var(--secondColor)
+  );
+}
+.gradient-to-bottom-right {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--firstColor),
+    var(--secondColor)
+  );
+}
+.gradient-to-bottom-left {
+  background-image: linear-gradient(
+    to bottom left,
+    var(--firstColor),
+    var(--secondColor)
+  );
+}
+
+@include gradientGenerator;

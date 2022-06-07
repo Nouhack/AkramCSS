@@ -1,0 +1,185 @@
+//@use "./variables/colorVariables" as *;
+//@use "./variables/borderVariables" as *;
+//@use "./mixins/helperMixin" as *;
+@use "./Variables" as *;
+
+@include classUtilityGeneratorForOneProperty(
+  $roundedSizes,
+  rounded,
+  border-radius
+);
+@include classUtilityGeneratorForTwoProperty(
+  $roundedSizes,
+  rounded-t,
+  border-top-left-radius,
+  border-top-right-radius
+);
+@include classUtilityGeneratorForTwoProperty(
+  $roundedSizes,
+  rounded-r,
+  border-top-right-radius,
+  border-bottom-right-radius
+);
+@include classUtilityGeneratorForTwoProperty(
+  $roundedSizes,
+  rounded-b,
+  border-bottom-right-radius,
+  border-bottom-left-radius
+);
+@include classUtilityGeneratorForTwoProperty(
+  $roundedSizes,
+  rounded-l,
+  border-top-left-radius,
+  border-bottom-left-radius
+);
+
+@include classUtilityGeneratorForOneProperty(
+  $roundedSizes,
+  rounded-tr,
+  border-top-right-radius
+);
+@include classUtilityGeneratorForOneProperty(
+  $roundedSizes,
+  rounded-tl,
+  border-top-left-radius
+);
+@include classUtilityGeneratorForOneProperty(
+  $roundedSizes,
+  rounded-br,
+  border-bottom-right-radius
+);
+@include classUtilityGeneratorForOneProperty(
+  $roundedSizes,
+  rounded-bl,
+  border-bottom-left-radius
+);
+
+//==============================
+// generating width color utility classes
+//==============================
+
+@include classUtilityGeneratorForOneProperty(
+  $borderWidths,
+  border,
+  border-width
+);
+@include classUtilityGeneratorForTwoProperty(
+  $borderWidths,
+  border-x,
+  border-left-width,
+  border-right-width
+);
+@include classUtilityGeneratorForTwoProperty(
+  $borderWidths,
+  border-y,
+  border-top-width,
+  border-bottom-width
+);
+@include classUtilityGeneratorForOneProperty(
+  $borderWidths,
+  border-t,
+  border-top-width
+);
+@include classUtilityGeneratorForOneProperty(
+  $borderWidths,
+  border-r,
+  border-right-width
+);
+@include classUtilityGeneratorForOneProperty(
+  $borderWidths,
+  border-b,
+  border-bottom-width
+);
+@include classUtilityGeneratorForOneProperty(
+  $borderWidths,
+  border-l,
+  border-left-width
+);
+
+//==============================
+// generating border color utility classes
+//==============================
+
+@include classUtilityGeneratorForOneProperty(
+  $colorPalette,
+  border,
+  border-color
+);
+@include classUtilityGeneratorForOneProperty(
+  $colorPalette,
+  border-t,
+  border-top-color
+);
+@include classUtilityGeneratorForOneProperty(
+  $colorPalette,
+  border-r,
+  border-right-color
+);
+@include classUtilityGeneratorForOneProperty(
+  $colorPalette,
+  border-b,
+  border-bottom-color
+);
+@include classUtilityGeneratorForOneProperty(
+  $colorPalette,
+  border-l,
+  border-left-color
+);
+
+@include classUtilityGeneratorForTwoProperty(
+  $colorPalette,
+  border-x,
+  border-left-color,
+  border-right-color
+);
+@include classUtilityGeneratorForTwoProperty(
+  $colorPalette,
+  border-y,
+  border-top-color,
+  border-bottom-color
+);
+
+//==============================
+// generating border style utility classes
+//==============================
+
+@include classUtilityGeneratorForOneProperty(
+  $borderStyles,
+  border,
+  border-style
+);
+//==============================
+// generating outline width utility classes
+//==============================
+@include classUtilityGeneratorForOneProperty(
+  $outlineWidths,
+  outline,
+  outline-width
+);
+
+//==============================
+// generating outline color utility classes
+//==============================
+@include classUtilityGeneratorForOneProperty(
+  $colorPalette,
+  outline,
+  outline-color
+);
+
+//==============================
+// generating outline style utility classes
+//==============================
+@include classUtilityGeneratorForOneProperty(
+  $outlineStyles,
+  outline,
+  outline-style
+);
+
+//==============================
+// generating outline offset utility classes
+//==============================
+@include classUtilityGeneratorForOneProperty(
+  $outlineOffsets,
+  outline-offset,
+  outline-offset
+);

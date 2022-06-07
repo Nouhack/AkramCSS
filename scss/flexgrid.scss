@@ -1,0 +1,169 @@
+//@use "./mixins/helperMixin" as *;
+//@use "./Variables/colorVariables" as *;
+//@use "./Variables/sizeVariables" as *;
+//@use "./Variables/otherVariables" as *;
+
+@use "./Variables" as * ;
+//===============================
+// generating flex basis utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty(
+  $percentageSizes,
+  basis,
+  flex-basis
+);
+//===============================
+// generating flex direction utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty(
+  $flexDirections,
+  flex,
+  flex-direction
+);
+//===============================
+// generating flex wrap utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($flexWraps, flex, flex-wrap);
+//===============================
+// generating flex utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($flexes, flex, flex);
+
+//===============================
+// generating flex grow utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty(
+  $flexGrowsAndShrinks,
+  grow,
+  flex-grow
+);
+
+//===============================
+// generating flex shrink utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty(
+  $flexGrowsAndShrinks,
+  shrink,
+  flex-shrink
+);
+
+//===============================
+// generating order utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($orders, order, order);
+
+//===============================
+// generating grid template column utility classes
+//===============================
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $gridTemplateColumns,
+  grid,
+  grid-template-columns,
+  repeat
+);
+
+//===============================
+// generating grid column span utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($spans, col, grid-column);
+//===============================
+// generating grid column start utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($Start, col, grid-column-start);
+//===============================
+// generating grid column end utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($End, col, grid-column-end);
+
+//===============================
+// generating grid template row utility classes
+//===============================
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $gridTemplateRows,
+  grid,
+  grid-template-rows,
+  repeat
+);
+
+//===============================
+// generating grid row span utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($spans, row, grid-row);
+
+//===============================
+// generating grid row start utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($Start, row, grid-row-start);
+//===============================
+// generating grid row end utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($End, row, grid-row-end);
+
+//===============================
+// generating grid auto flow utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty(
+  $gridAutoFlows,
+  grid-flow,
+  grid-auto-flow
+);
+
+//===============================
+// generating gap utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($remSizes, gap, gap);
+@include classUtilityGeneratorForOneProperty($remSizes, gap-x, column-gap);
+@include classUtilityGeneratorForOneProperty($remSizes, gap-y, row-gap);
+
+//===============================
+// generating justify content utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty(
+  $Contents,
+  justifyC,
+  justify-content
+);
+
+//===============================
+// generating justify items utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($Items, justifyI, justify-items);
+
+//===============================
+// generating justify self utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty(
+  $justifySelfs,
+  justifyS,
+  justify-self
+);
+
+//===============================
+// generating align content utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($Contents, alignC, align-content);
+
+//===============================
+// generating align items utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($alignItems, alignI, align-items);
+
+//===============================
+// generating align self utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($alignSelfs, alignS, align-self);
+
+//===============================
+// generating place content utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($Contents, placeC, place-content);
+
+//===============================
+// generating place items utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($Items, placeI, place-items);
+
+//===============================
+// generating place self utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty($justifySelfs, placeS, place-self);

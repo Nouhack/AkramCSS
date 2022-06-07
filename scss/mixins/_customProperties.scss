@@ -1,0 +1,11 @@
+@use "../Variables/colorVariables" as *;
+
+@mixin CustomVariableGenerator($themeType) {
+  @each $theme, $colorList in $colors {
+    @each $key, $colorValue in $colorList {
+      @if $theme == $themeType {
+        --#{$key}: #{$colorValue};
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// import all variables
+@forward "./backgroundVariables";
+@forward "./borderVariables";
+@forward "./colorVariables";
+@forward "./effectVariables";
+@forward "./filterVariables";
+@forward "./otherVariables";
+@forward "./pseudoClassVariables";
+@forward "./sizeVariables";
+@forward "./transformVariables";
+@forward "./transitionVariables";
+@forward "./typographyVariables";
+
+// import all mixins
+@forward "../mixins/animationMixin";
+@forward "../mixins/customProperties";
+@forward "../mixins/helperMixin";
+@forward "../mixins/utilsGenerator";

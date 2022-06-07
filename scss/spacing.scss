@@ -1,0 +1,63 @@
+//@use "./variables/pseudoClassVariables" as *;
+//@use "./mixins/helperMixin" as *;
+//@use "./variables/sizeVariables" as *;
+@use "./Variables" as * ;
+//=======================
+// padding utility classes
+//=======================
+@include classUtilityGeneratorForOneProperty($remSizes, p, padding);
+@include classUtilityGeneratorForTwoProperty(
+  $remSizes,
+  px,
+  padding-left,
+  padding-right
+);
+@include classUtilityGeneratorForTwoProperty(
+  $remSizes,
+  py,
+  padding-top,
+  padding-bottom
+);
+@include classUtilityGeneratorForOneProperty($remSizes, pt, padding-top);
+@include classUtilityGeneratorForOneProperty($remSizes, pr, padding-right);
+@include classUtilityGeneratorForOneProperty($remSizes, pb, padding-bottom);
+@include classUtilityGeneratorForOneProperty($remSizes, pl, padding-left);
+//======================
+// margin utility classes
+//======================
+@include classUtilityGeneratorForOneProperty($remSizes, m, margin);
+@include classUtilityGeneratorForTwoProperty(
+  $remSizes,
+  mx,
+  margin-left,
+  margin-right
+);
+@include classUtilityGeneratorForTwoProperty(
+  $remSizes,
+  my,
+  margin-top,
+  margin-bottom
+);
+@include classUtilityGeneratorForOneProperty($remSizes, mt, margin-top);
+@include classUtilityGeneratorForOneProperty($remSizes, mr, margin-right);
+@include classUtilityGeneratorForOneProperty($remSizes, mb, margin-bottom);
+@include classUtilityGeneratorForOneProperty($remSizes, ml, margin-bottom);
+
+@each $key, $value in $remSizes {
+  .space-x-#{$key} {
+    & > * {
+      margin-right: $value;
+    }
+    & > *:last-child {
+      margin-right: 0;
+    }
+  }
+  .space-y-#{$key} {
+    & > * {
+      margin-bottom: $value;
+    }
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

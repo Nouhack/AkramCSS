@@ -1,0 +1,157 @@
+@use "./utilsGenerator" as *;
+
+@mixin classUtilityGeneratorForOneProperty($variable, $className, $param1) {
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (min-width: 0px) {
+    @include utilsForOneProperty($variable, $className, $param1, "");
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 768px) {
+    @include utilsForOneProperty($variable, $className, $param1, "md");
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 992px) {
+    @include utilsForOneProperty($variable, $className, $param1, "lg");
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 1024px) {
+    @include utilsForOneProperty($variable, $className, $param1, "xl");
+  }
+}
+
+@mixin classUtilityGeneratorForTwoProperty(
+  $variable,
+  $className,
+  $param1,
+  $param2
+) {
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (min-width: 0px) {
+    @include utilsForTwoProperty($variable, $className, $param1, $param2, "");
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 768px) {
+    @include utilsForTwoProperty($variable, $className, $param1, $param2, "md");
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 992px) {
+    @include utilsForTwoProperty($variable, $className, $param1, $param2, "lg");
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 1024px) {
+    @include utilsForTwoProperty($variable, $className, $param1, $param2, "xl");
+  }
+}
+
+@mixin classUtilityGeneratorForOnePropertyWithPrefix(
+  $variable,
+  $className,
+  $param1,
+  $prefix
+) {
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (min-width: 0px) {
+    @include utilsForOnePropertyPrefix(
+      $variable,
+      $className,
+      $param1,
+      $prefix,
+      ""
+    );
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 768px) {
+    @include utilsForOnePropertyPrefix(
+      $variable,
+      $className,
+      $param1,
+      $prefix,
+      "md"
+    );
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 992px) {
+    @include utilsForOnePropertyPrefix(
+      $variable,
+      $className,
+      $param1,
+      $prefix,
+      "lg"
+    );
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 1024px) {
+    @include utilsForOnePropertyPrefix(
+      $variable,
+      $className,
+      $param1,
+      $prefix,
+      "xl"
+    );
+  }
+}
+
+//@mixin classUtilityGeneratorForOneProperty($variable, $className, $param1) {
+//}
+
+// utilities generator for one property with special prefix
+
+@mixin classUtilityGeneratorForOnePropertyWithSpecialPrefix(
+  $variable,
+  $className,
+  $param1,
+  $specialPrefix
+) {
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (min-width: 0px) {
+    @include utilsForOnePropertyWithSpecialPrefixAndArray(
+      $variable,
+      $className,
+      $param1,
+      $specialPrefix,
+      ""
+    );
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 768px) {
+    @include utilsForOnePropertyWithSpecialPrefixAndArray(
+      $variable,
+      $className,
+      $param1,
+      $specialPrefix,
+      "md"
+    );
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 992px) {
+    @include utilsForOnePropertyWithSpecialPrefixAndArray(
+      $variable,
+      $className,
+      $param1,
+      $specialPrefix,
+      "lg"
+    );
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 1024px) {
+    @include utilsForOnePropertyWithSpecialPrefixAndArray(
+      $variable,
+      $className,
+      $param1,
+      $specialPrefix,
+      "xl"
+    );
+  }
+}

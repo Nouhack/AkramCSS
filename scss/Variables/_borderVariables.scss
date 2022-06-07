@@ -1,0 +1,80 @@
+
+$rounded-none   :   0rem !default;
+$rounded-sm     :   2rem !default;
+$rounded-md     :   3rem !default;
+$rounded-lg     :   5rem !default;
+$rounded-xl     :   10rem !default;
+$rounded-2xl    :   15rem !default;
+$rounded-3xl    :   20rem !default;
+$rounded-4xl    :   25rem !default;
+$rounded-5xl    :   30rem !default;
+$rounded-6xl    :   35rem !default;
+$rounded-circle :   50% !default;
+
+$roundedSizes: (
+  "none"      : $rounded-none,
+  "sm"        : $rounded-sm,
+  "md"        : $rounded-md,
+  "lg"        : $rounded-lg,
+  "xl"        : $rounded-xl,
+  "2xl"       :  $rounded-2xl,
+  "3xl"       : $rounded-3xl,
+  "4xl"       : $rounded-4xl,
+  "5xl"       : $rounded-5xl,
+  "6xl"       : $rounded-6xl,
+  "circle"    : $rounded-circle,
+) !default;
+
+$borderWidths: (
+  "0"   : 0,
+  "1"   : 1px,
+  "2"   : 2px,
+  "3"   : 3px,
+  "4"   : 4px,
+  "5"   : 5px,
+  "6"   : 6px,
+  "7"   : 7px,
+  "8"   : 8px,
+);
+$borderStyles: (
+  "none"    : none,
+  "solid"   : solid,
+  "dashed"  : dashed,
+  "dotted"  : dotted,
+  "double"  : double,
+  "groove"  : groove,
+  "ridge"   : ridge,
+  "inset"   : inset,
+  "outset"  : outset,
+);
+
+$outlineWidths: (
+  "0"   : 0,
+  "1"   : 1px,
+  "2"   : 2px,
+  "3"   : 3px,
+  "4"   : 4px,
+  "5"   : 5px,
+  "6"   : 6px,
+  "7"   : 7px,
+  "8"   : 8px,
+);
+$outlineStyles: (
+  "none"    : none,
+  "solid"   : solid,
+  "dashed"  : dashed,
+  "dotted"  : dotted,
+  "double"  : double,
+  "hidden"  : hidden,
+);
+$outlineOffsets: (
+  "none"  : 0,
+  "1"     : 1px,
+  "2"     : 2px,
+  "3"     : 3px,
+  "4"     : 4px,
+  "5"     : 5px,
+  "6"     : 6px,
+  "7"     : 7px,
+  "8"     : 8px,
+);

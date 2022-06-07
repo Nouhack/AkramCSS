@@ -1,0 +1,123 @@
+//@use "./variables/colorVariables" as *;
+//@use "./variables/sizeVariables" as *;
+//@use "./variables/typographyVariables" as *;
+//@use "./mixins/helperMixin" as *;
+
+@use "./Variables" as * ;
+// generating utility classes for font-size
+@include classUtilityGeneratorForOneProperty($textSizes, text, font-size);
+
+// generating utility classes for font-familly
+@include classUtilityGeneratorForOneProperty($fontFamily, font, font-family);
+// generating utility classes for font-weight
+@include classUtilityGeneratorForOneProperty($fontWeights, font, font-weight);
+
+// generating utility classes for font-variant-numeric
+@include classUtilityGeneratorForOneProperty(
+  $fontVariantNumeric,
+  font,
+  font-variant-numeric
+);
+
+// generating utility classes for letter-spacing
+@include classUtilityGeneratorForOneProperty(
+  $letterSpacing,
+  ls,
+  letter-spacing
+);
+
+// generating utility classes for line-height
+@include classUtilityGeneratorForOneProperty($lineHeight, lh, line-height);
+
+// generating utility classes for list-style-type
+@include classUtilityGeneratorForOneProperty($listTypes, list, list-style-type);
+
+// generating utility classes for list-style-position
+@include classUtilityGeneratorForOneProperty(
+  $listStylePositions,
+  list,
+  list-style-position
+);
+
+// generating utility classes for text-align
+@include classUtilityGeneratorForOneProperty($textAlign, text, text-align);
+
+// generating utility classes for text-color
+@include classUtilityGeneratorForOneProperty($colorPalette, text, color);
+
+// generating utility classes for text-decoration
+@include classUtilityGeneratorForOneProperty(
+  $textDecorations,
+  text,
+  text-decoration
+);
+
+// generating utility classes for text-decoration-color
+@include classUtilityGeneratorForOneProperty(
+  $colorPalette,
+  decoration,
+  text-decoration-color
+);
+
+// generating utility classes for text-decoration-style
+@include classUtilityGeneratorForOneProperty(
+  $textDecorationStyles,
+  decoration,
+  text-decoration-style
+);
+
+// generating utility classes for text-decoration-thickness
+@include classUtilityGeneratorForOneProperty(
+  $textDecorationThiknesses,
+  decoration,
+  text-decoration-thickness
+);
+
+// generating utility classes for text-underline-offset
+@include classUtilityGeneratorForOneProperty(
+  $textUnderlineOffset,
+  underline-offset,
+  text-underline-offset
+);
+
+// generating utility classes for text-transform
+@include classUtilityGeneratorForOneProperty(
+  $textTransform,
+  text,
+  text-transform
+);
+
+// generating utility classes for text-overflow
+@include classUtilityGeneratorForOneProperty(
+  $textOverflow,
+  text,
+  text-overflow
+);
+
+// generating utility classes for text-indent
+@include classUtilityGeneratorForOneProperty($remSizes, indent, text-indent);
+
+// generating utility classes for vertical-align
+@include classUtilityGeneratorForOneProperty(
+  $verticalAlignment,
+  align,
+  vertical-align
+);
+
+// generating utility classes for white-space
+@include classUtilityGeneratorForOneProperty(
+  $whitespace,
+  whitespace,
+  white-space
+);
+
+// generating utility classes for word-break
+@include classUtilityGeneratorForOneProperty($wordBreak, wordbreak, word-break);
+
+.italic {
+  font-style: italic;
+}
+
+.not-italic {
+  font-style: normal;
+}

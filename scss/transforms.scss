@@ -1,0 +1,95 @@
+//@use "./Variables/transformVariables" as *;
+//@use "./Variables/sizeVariables" as *;
+//@use "./mixins/helperMixin" as *;
+@use './Variables' as * ;
+
+//===============================
+//generating scale utility classes
+//===============================
+
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $scales,
+  scale,
+  transform,
+  scale
+);
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $scales,
+  scale-x,
+  transform,
+  scaleX
+);
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $scales,
+  scale-y,
+  transform,
+  scaleY
+);
+
+//===============================
+//generating rotate utility classes
+//===============================
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $rotates,
+  rotate,
+  transform,
+  rotate
+);
+
+//===============================
+//generating translate utility classes
+//===============================
+// rem sizes transate======================
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $remSizes,
+  translate-x,
+  transform,
+  translateX
+);
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $remSizes,
+  translate-y,
+  transform,
+  translateY
+);
+
+// percentage sizes transate ======================
+
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $percentageSizes,
+  translate-x,
+  transform,
+  translateX
+);
+
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $percentageSizes,
+  translate-y,
+  transform,
+  translateY
+);
+
+//===============================
+//generating skew utility classes
+//===============================
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $skews,
+  skew-x,
+  transform,
+  skewX
+);
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $skews,
+  skew-y,
+  transform,
+  skewY
+);
+
+//===============================
+//generating transform origin utility classes
+//===============================
+@include classUtilityGeneratorForOneProperty(
+  $transformOrigins,
+  origin,
+  transform-origin
+);

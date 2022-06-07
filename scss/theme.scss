@@ -1,0 +1,21 @@
+//@use "./mixins/customProperties" as *;
+@use "./Variables" as * ;
+// light mode theme
+.light-mode {
+  @include CustomVariableGenerator("light");
+}
+// dark mode theme
+.dark-mode {
+  @include CustomVariableGenerator("dark");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include CustomVariableGenerator("dark");
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    @include CustomVariableGenerator("light");
+  }
+}

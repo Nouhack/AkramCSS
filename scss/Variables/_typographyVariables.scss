@@ -1,0 +1,230 @@
+$text-size-xs           : 0.75rem !default;
+$text-size-sm           : 0.875rem !default;
+$text-size-base         : 1rem !default;
+$text-size-lg           : 1.125rem !default;
+$text-size-xl           : 1.25rem !default;
+$text-size-2xl          : 1.5rem !default;
+$text-size-3xl          : 1.875rem !default;
+$text-size-4xl          : 2.25rem !default;
+$text-size-5xl          : 3rem !default;
+$text-size-6xl          : 4rem !default;
+$text-size-7xl          : 5rem !default;
+$text-size-8xl          : 6rem !default;
+$text-size-9xl          : 7rem !default;
+$text-size-10xl         : 8rem !default;
+
+
+$font-weight-hairline   : 100 !default ;
+$font-weight-thin       : 200 !default;
+$font-weight-light      : 300 !default;
+$font-weight-normal     : 400 !default;
+$font-weight-medium     : 500 !default;
+$font-weight-semibold   : 600 !default;
+$font-weight-bold       : 700 !default;
+$font-weight-extrabold  : 800 !default;
+$font-weight-black      : 900 !default;
+
+
+$letter-spacing-tighter : -0.05em !default;
+$letter-spacing-tight   : -0.025em !default;
+$letter-spacing-normal  : 0 !default;
+$letter-spacing-wide    : 0.025em !default;
+$letter-spacing-wider   : 0.05em !default;
+$letter-spacing-widest  : 0.1em !default;
+
+
+$line-height-none       : 1 !default;
+$line-height-tighter    : 1.25 !default;
+$line-height-tight      : 1.5 !default;
+$line-height-normal     : 1.75 !default;
+$line-height-loose      : 2 !default;
+
+
+$textSizes: (
+  "xs"    : $text-size-xs,
+  "sm"    : $text-size-sm,
+  "base"  : $text-size-base,
+  "lg"    : $text-size-lg,
+  "xl"    : $text-size-xl,
+  "2xl"   : $text-size-2xl,
+  "3xl"   : $text-size-3xl,
+  "4xl"   : $text-size-4xl,
+  "5xl"   : $text-size-5xl,
+  "6xl"   : $text-size-6xl,
+  "7xl"   : $text-size-7xl,
+  "8xl"   : $text-size-8xl,
+  "9xl"   : $text-size-9xl,
+  "10xl"  : $text-size-10xl
+) !default;
+
+$fontFamily: (
+  sans: (
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji",
+  ),
+  serif: (
+    ui-serif,
+    Georgia,
+    Cambria,
+    "Times New Roman",
+    Times,
+    serif,
+  ),
+  mono: (
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Liberation Mono",
+  ),
+);
+
+$fontWeights: (
+  "hairline"  : $font-weight-hairline,
+  "thin"      : $font-weight-thin,
+  "light"     : $font-weight-light,
+  "normal"    : $font-weight-normal,
+  "medium"    : $font-weight-medium,
+  "semibold"  : $font-weight-semibold,
+  "bold"      : $font-weight-bold,
+  "extrabold" : $font-weight-extrabold,
+  "black"     : $font-weight-black,
+) !default;
+
+
+$fontVariantNumeric: (
+  "normal-nums"       : normal,
+  "ordinal-nums"      : ordinal,
+  "slashed-zero"      : slashed-zero,
+  "lining-nums"       : lining-nums,
+  "oldstyle-nums"     : oldstyle-nums,
+  "proportional-nums" : proportional-nums,
+  "tabular-nums"      : tabular-nums,
+  "diagonal-fractions": diagonal-fractions,
+  "stacked-fractions" : stacked-fractions,
+);
+
+
+$letterSpacing: (
+  "tighter"   : $letter-spacing-tighter,
+  "tight"     : $letter-spacing-tight,
+  "normal"    : $letter-spacing-normal,
+  "wide"      : $letter-spacing-wide,
+  "wider"     : $letter-spacing-wider,
+  "widest"    : $letter-spacing-widest,
+) !default ;
+
+
+$lineHeight: (
+  "none"      : $line-height-none,
+  "tighter"   : $line-height-tighter,
+  "tight"     : $line-height-tight,
+  "normal"    : $line-height-normal,
+  "loose"     : $line-height-loose,
+) !default;
+
+$listTypes: (
+  "none"              : none,
+  "disc"              : disc,
+  "decimal"           : decimal,
+  "circle"            : circle,
+  "square"            : square,
+  "box"               : box,
+  "armenian"          : armenian,
+  "georgian"          : georgian,
+  "hebrew"            : hebrew,
+  "cjk-ideographic"   : cjk-ideographic,
+  "hiragana"          : hiragana,
+  "katakana"          : katakana,
+  "hiragana-iroha"    : hiragana-iroha,
+);
+
+$listStylePositions: (
+  "inside"    : inside,
+  "outside"   : outside,
+);
+
+$textAlign: (
+  "left"      : left,
+  "right"     : right,
+  "center"    : center,
+  "justify"   : justify,
+);
+$textDecorations: (
+  "none"           : none,
+  "underline"      : underline,
+  "line-through"   : line-through,
+  "overline"       : overline,
+);
+
+$textDecorationStyles: (
+  "solid"   : solid,
+  "double"  : double,
+  "dotted"  : dotted,
+  "dashed"  : dashed,
+  "wavy"    : wavy,
+);
+$textDecorationThiknesses: (
+  "auto"      : auto,
+  "from-font" : from-font,
+  "0"         : 0px,
+  "1"         : 1px,
+  "2"         : 2px,
+  "4"         : 4px,
+  "8"         : 8px,
+);
+$textUnderlineOffset: (
+  "auto"      : auto,
+  "0"         : 0px,
+  "1"         : 1px,
+  "2"         : 2px,
+  "4"         : 4px,
+  "8"         : 8px,
+);
+$textTransform: (
+  "normal-case"   : none,
+  "uppercase"     : uppercase,
+  "lowercase"     : lowercase,
+  "capitalize"    : capitalize,
+);
+$textOverflow: (
+  "clip"    : clip,
+  "ellipsis": ellipsis,
+);
+$verticalAlignment: (
+  "baseline"        : baseline,
+  "sub"             : sub,
+  "super"           : super,
+  "text-top"        : text-top,
+  "text-bottom"     : text-bottom,
+  "middle"          : middle,
+  "top"             : top,
+  "bottom"          : bottom,
+);
+$whitespace: (
+  "normal"          : normal,
+  "nowrap"          : nowrap,
+  "pre"             : pre,
+  "pre-wrap"        : pre-wrap,
+  "pre-line"        : pre-line,
+  "break-spaces"    : break-spaces,
+);
+$wordBreak: (
+  "break-normal"    : normal,
+  "break-all"       : break-all,
+  "keep-all"        : keep-all,
+  "break-word"      : break-word,
+);

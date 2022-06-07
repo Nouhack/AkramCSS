@@ -1,0 +1,73 @@
+//@use "./Variables/filterVariables" as *;
+//@use "./mixins/helperMixin" as *;
+
+@use "./Variables" as * ;
+//===============================
+//generating blur utility classes
+//===============================
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $blurs,
+  blur,
+  filter,
+  blur
+);
+
+//===============================
+//generating brightness utility classes
+//===============================
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $brightness,
+  brightness,
+  filter,
+  brightness
+);
+
+//===============================
+//generating contrast utility classes
+//===============================
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $contrast,
+  contrast,
+  filter,
+  contrast
+);
+
+//===============================
+//generating grayscale utility classes
+//===============================
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $grayScales,
+  grayscale,
+  filter,
+  grayscale
+);
+
+//===============================
+//generating hueRotates utility classes
+//===============================
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $hueRotates,
+  hue-rotate,
+  filter,
+  hue-rotate
+);
+
+//===============================
+//generating invert utility classes
+//===============================
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $inverts,
+  invert,
+  filter,
+  invert
+);
+
+//===============================
+//generating saturate utility classes
+//===============================
+@include classUtilityGeneratorForOnePropertyWithPrefix(
+  $saturates,
+  saturate,
+  filter,
+  saturate
+);

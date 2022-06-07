@@ -1,0 +1,36 @@
+@mixin animationGenerator($name) {
+  @media only screen and (min-width: 0px) {
+    .#{$name} {
+      animation: #{$name};
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 768px) {
+    .md\:#{$name} {
+      animation: #{$name};
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 992px) {
+    .lg\:#{$name} {
+      animation: #{$name};
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 1024px) {
+    .xl\:#{$name} {
+      animation: #{$name};
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+  }
+}

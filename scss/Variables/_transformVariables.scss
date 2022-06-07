@@ -1,0 +1,47 @@
+$scales: (
+  0     : 0,
+  25    : 0.25,
+  50    : 0.5,
+  75    : 0.75,
+  100   : 1,
+  150   : 1.5,
+  175   : 1.75,
+  200   : 2,
+);
+
+$rotates: (
+  0     : 0deg,
+  1     : 1deg,
+  3     : 3deg,
+  5     : 5deg,
+  12    : 12deg,
+  30    : 30deg,
+  45    : 45deg,
+  60    : 60deg,
+  90    : 90deg,
+  180   : 180deg,
+);
+$skews: (
+  0     : 0deg,
+  1     : 1deg,
+  3     : 3deg,
+  6     : 6deg,
+  12    : 12deg,
+  30    : 30deg,
+  45    : 45deg,
+  60    : 60deg,
+  90    : 90deg,
+  180   : 180deg,
+);
+
+$transformOrigins: (
+  c: center,
+  t: top,
+  b: bottom,
+  l: left,
+  r: right,
+  tl: top left,
+  tr: top right,
+  bl: bottom left,
+  br: bottom right,
+);

@@ -1,0 +1,42 @@
+$base-light       :   hsl(0, 0%, 100%) !default;
+$inner-light      :   hsl(0, 0%, 0%) !default;
+$sissa-light      :   hsl(155, 76%, 37%) !default;
+$akram-light      :   hsl(193, 93%, 35%) !default;
+$maria-light      :   hsl(307, 52%, 49%) !default;
+$senary-light     :   hsl(357, 89%, 68%) !default;
+
+$base-dark        :   hsl(189, 75%, 11%) !default;
+$inner-dark       :   hsl(0, 0%, 100%) !default;
+$sissa-dark       :   hsl(155, 80%, 27%) !default;
+$akram-dark       :   hsl(182, 64%, 45%) !default;
+$maria-dark       :   hsl(317, 74%, 36%) !default;
+$senary-dark      :   hsl(356, 73%, 54%) !default;
+
+
+$colors: (
+  light: (
+    "base"        : $base-light,
+    "inner"       : $inner-light,
+    "sissa"       : $sissa-light,
+    "akram"       : $akram-light,
+    "maria"       : $maria-light,
+    "senary"      : $senary-light,
+  ),
+  dark: (
+    "base"        : $base-dark,
+    "inner"       : $inner-dark,
+    "sissa"       : $sissa-dark,
+    "akram"       : $akram-dark,
+    "maria"       : $maria-dark,
+    "senary"      : $senary-dark,
+  ),
+) !default;
+
+$colorPalette: (
+  "base"        : var(--base),
+  "inner"       : var(--inner),
+  "sissa"       : var(--sissa),
+  "akram"       : var(--akram),
+  "maria"       : var(--maria),
+  "senary"      : var(--senary),
+) !default;

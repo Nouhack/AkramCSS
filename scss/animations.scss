@@ -1,0 +1,5 @@
+//@use "./mixins/animationMixin" as *;
+@use "./Variables" as * ;
+// here you can add some animate.style animations
+@include animationGenerator("bounce");
+@include animationGenerator("flash");

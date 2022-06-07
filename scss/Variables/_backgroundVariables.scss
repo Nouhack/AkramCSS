@@ -1,0 +1,42 @@
+$primarycolor: none;
+$secondarycolor: none;
+$backgroundAttachment: (
+  "fixed"   : fixed,
+  "scroll"  : scroll,
+  "local"   : local,
+);
+$backgroundClip: (
+  "clip-border"   : border-box,
+  "clip-padding"  : padding-box,
+  "clip-content"  : content-box,
+  "clip-text"     : text,
+);
+$backgroundOrigin: (
+  "origin-border"   : border,
+  "origin-padding"  : padding,
+  "origin-content"  : content,
+);
+$backgroundPosition: (
+  "center"          : center,
+  "top"             : top,
+  "right"           : right,
+  "bottom"          : bottom,
+  "left"            : left,
+  "top-left"        : top left,
+  "top-right"       : top right,
+  "bottom-left"     : bottom left,
+  "bottom-right"    : bottom right,
+);
+$backgroundRepeat: (
+  "repeat"        : repeat,
+  "repeat-x"      : repeat-x,
+  "repeat-y"      : repeat-y,
+  "no-repeat"     : no-repeat,
+  "repeat-round"  : round,
+  "repeat-space"  : space,
+);
+$backgroundSize: (
+  "auto"        : auto,
+  "cover"       : cover,
+  "contain"     : contain,
+);

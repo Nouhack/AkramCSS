@@ -1,0 +1,26 @@
+{
+  "name": "@nouhsa/akramcss",
+  "version": "1.0.0",
+  "description": "akramcss is a css utility library that provides a number of useful classes and utilities for styling your web pages.",
+  "main": "styles.scss",
+  "unpkg": "css/akramcss.css",
+  "style": "@nouhsa/akramcss/css/akramcss.min.css",
+  "scripts": {
+    "build": "npm run build-sass && npm run build-postcss ",
+    "build-postcss": "postcss css/akramcss.min.css -o css/akramcss.min.css",
+    "build-sass": "sass scss/all.scss css/akramcss.min.css"
+  },
+  "author": "saiche nouh",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.9",
+    "postcss-animation": "^0.0.12",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.52.2"
+  },
+  "files": [
+    "scss",
+    "css/akramcss.min.css"
+  ]
+}

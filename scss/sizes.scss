@@ -1,0 +1,61 @@
+//@use "./variables/sizeVariables" as *;
+//@use "./variables/pseudoClassVariables" as *;
+//@use "./mixins/helperMixin" as *;
+@use "./Variables" as * ;
+/* percentage width */
+//=========================
+// percentage size utility classes
+//=========================
+@include classUtilityGeneratorForOneProperty($percentageSizes, w, width);
+@include classUtilityGeneratorForOneProperty(
+  $percentageSizes,
+  min-w,
+  min-width
+);
+@include classUtilityGeneratorForOneProperty(
+  $percentageSizes,
+  max-w,
+  max-width
+);
+@include classUtilityGeneratorForOneProperty($percentageSizes, h, height);
+@include classUtilityGeneratorForOneProperty(
+  $percentageSizes,
+  min-h,
+  min-height
+);
+@include classUtilityGeneratorForOneProperty(
+  $percentageSizes,
+  max-h,
+  max-height
+);
+
+//=========================
+// rem size utility classes
+//=========================
+
+@include classUtilityGeneratorForOneProperty($remSizes, w, width);
+@include classUtilityGeneratorForOneProperty($remSizes, min-w, min-width);
+@include classUtilityGeneratorForOneProperty($remSizes, max-w, max-width);
+@include classUtilityGeneratorForOneProperty($remSizes, h, height);
+@include classUtilityGeneratorForOneProperty($remSizes, min-h, min-height);
+@include classUtilityGeneratorForOneProperty($remSizes, max-h, max-height);
+
+//=========================
+// view size utility classes
+//=========================
+
+@include classUtilityGeneratorForOneProperty($widthViewSizes, w, width);
+@include classUtilityGeneratorForOneProperty($widthViewSizes, min-w, min-width);
+@include classUtilityGeneratorForOneProperty($widthViewSizes, max-w, max-width);
+
+@include classUtilityGeneratorForOneProperty($heightViewSizes, h, height);
+@include classUtilityGeneratorForOneProperty(
+  $heightViewSizes,
+  min-h,
+  min-height
+);
+@include classUtilityGeneratorForOneProperty(
+  $heightViewSizes,
+  max-h,
+  max-height
+);
