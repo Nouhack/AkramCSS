@@ -2,7 +2,7 @@
 ## Utility css library to speed up your work
 
 
-[![Generic badge](https://img.shields.io/badge/AkramCSS-DOC-blue.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/AkramCSS-Github-white.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/AkramCSS-npm-red.svg)](https://shields.io/) 
+[![Generic badge](https://img.shields.io/badge/AkramCSS-DOC-blue.svg)](https://akramcss.vercel.app/) [![Generic badge](https://img.shields.io/badge/AkramCSS-Github-white.svg)](https://github.com/Nouhack/AkramCSS) [![Generic badge](https://img.shields.io/badge/AkramCSS-npm-red.svg)](https://www.npmjs.com/package/@nouhsa/akramcss) 
 
 
 
