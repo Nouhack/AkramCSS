@@ -1,38 +1,64 @@
+$primary-light    :   hsl(241,41%, 39%) !default;
+$secondary-light  :   hsl(14,100%, 70%) !default;
+$success-light    :   hsl(146,81%, 55%) !default;
+$danger-light     :   hsl(355,77%, 54%) !default;
+$warning-light    :   hsl(53,79%, 58%) !default;
+$info-light       :   hsl(191,65%, 57%) !default;
 $base-light       :   hsl(0, 0%, 100%) !default;
 $inner-light      :   hsl(0, 0%, 0%) !default;
-$sissa-light      :   hsl(155, 76%, 37%) !default;
-$akram-light      :   hsl(193, 93%, 35%) !default;
+$sissa-light      :   hsl(312, 40%, 26%) !default;
+$akram-light      :   hsl(173, 58%, 39%) !default;
 $maria-light      :   hsl(307, 52%, 49%) !default;
-$senary-light     :   hsl(357, 89%, 68%) !default;
 
+$primary-dark     :   hsl(220,37%, 57%) !default;
+$secondary-dark   :   hsl(14,100%, 77%) !default;
+$success-dark     :   hsl(146,82%, 63%) !default;
+$danger-dark      :   hsl(2,91%, 61%) !default;
+$warning-dark     :   hsl(68,100%, 74%) !default;
+$info-dark        :   hsl(190,96%, 73%) !default;
 $base-dark        :   hsl(189, 75%, 11%) !default;
 $inner-dark       :   hsl(0, 0%, 100%) !default;
-$sissa-dark       :   hsl(155, 80%, 27%) !default;
-$akram-dark       :   hsl(182, 64%, 45%) !default;
+$sissa-dark       :   hsl(312, 80%, 31%) !default;
+$akram-dark       :   hsl(173, 72%, 39%) !default;
 $maria-dark       :   hsl(317, 74%, 36%) !default;
-$senary-dark      :   hsl(356, 73%, 54%) !default;
 
 
 $colors: (
   light: (
+    "primary"     : $primary-light,
+    "secondary"   : $secondary-light,
+    "success"     : $success-light,
+    "danger"      : $danger-light,
+    "warning"     : $warning-light,
+    "info"        : $info-light,
     "base"        : $base-light,
     "inner"       : $inner-light,
     "sissa"       : $sissa-light,
     "akram"       : $akram-light,
     "maria"       : $maria-light,
-    "senary"      : $senary-light,
   ),
   dark: (
+    "primary"     : $primary-dark,
+    "secondary"   : $secondary-dark,
+    "success"     : $success-dark,
+    "danger"      : $danger-dark,
+    "warning"     : $warning-dark,
+    "info"        : $info-dark,
     "base"        : $base-dark,
     "inner"       : $inner-dark,
     "sissa"       : $sissa-dark,
     "akram"       : $akram-dark,
     "maria"       : $maria-dark,
-    "senary"      : $senary-dark,
   ),
 ) !default;
 
 $colorPalette: (
+  "primary"     : var(--primary),
+  "secondary"   : var(--secondary),
+  "success"     : var(--success),
+  "danger"      : var(--danger),
+  "warning"     : var(--warning),
+  "info"        : var(--info),
   "base"        : var(--base),
   "inner"       : var(--inner),
   "sissa"       : var(--sissa),
